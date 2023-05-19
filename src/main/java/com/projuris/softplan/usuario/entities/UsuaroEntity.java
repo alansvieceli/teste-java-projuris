@@ -15,7 +15,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "usuario")
-public class UsuaroEntity extends BaseEntity {
+public final class UsuaroEntity extends BaseEntity {
 
   @Column(nullable = false)
   private String usuario;
@@ -28,13 +28,5 @@ public class UsuaroEntity extends BaseEntity {
 
   @Column()
   private int idade;
-
-  @Column(name = "updated_at")
-  private LocalDateTime updatedAt;
-
-  @PreUpdate
-  protected void onUpdate() {
-    updatedAt = LocalDateTime.now();
-  }
 
 }

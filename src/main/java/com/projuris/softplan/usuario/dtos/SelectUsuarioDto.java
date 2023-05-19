@@ -10,7 +10,11 @@ import lombok.Setter;
 public class SelectUsuarioDto extends UsuarioDto {
   private Long id;
 
+  private String createdBy;
+
   private LocalDateTime createdAt;
+
+  private String updateBy;
 
   private LocalDateTime updatedAt;
 
