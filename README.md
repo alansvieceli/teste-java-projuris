@@ -37,3 +37,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{ "idade": 41 }' http://loca
 ```sh
 curl -X DELETE http://localhost:8080/api/usuario/1
 ```
+
+## Auditoria 
+
+Foi implementada uma auditoria simples, baseada nos campos createdAt, updatedAt, createBy e updateBy... Afim de exemplificar o uso. 
