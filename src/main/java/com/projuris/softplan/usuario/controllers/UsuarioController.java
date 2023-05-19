@@ -23,11 +23,11 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/usuario")
-public class TabelaController {
+public class UsuarioController {
 
   private IUsuarioService service;
 
-  public TabelaController(IUsuarioService service) {
+  public UsuarioController(IUsuarioService service) {
     this.service = service;
   }
 
